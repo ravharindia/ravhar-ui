@@ -18,6 +18,11 @@ header .nav-link:hover {
     color: #ee7e33;
 }
 
+header .navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
 header .cartbtn {
     position: relative;
     margin-left: 20px;
