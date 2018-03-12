@@ -1,1 +1,158 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #282828;
+    font-size: 14px;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    list-style: none;
+    ;
+}
+
+a {
+    text-decoration: none;
+    color: #1f1e1d;
+}
+
+img {
+    outline: none;
+    border: none;
+    display: block;
+    margin: auto;
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+    color: #000;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 26px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+h5 {
+    font-size: 22px;
+}
+
+h6 {
+    font-size: 20px;
+}
+
+a:not([href]):not([tabindex]) {
+    color: #1f1e1d;
+    text-decoration: none;
+}
+
+
+/* clearfix */
+
+.clearfix:after,
+.clearfix:before {
+    content: '';
+    display: table
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+/* form control */
+
+.form-control {
+    border-radius: 2px;
+    border: solid 1px #e9e9e9;
+}
+
+
+/* button */
+
+.btn {
+    padding: 7px 20px;
+    text-transform: uppercase;
+    border: solid 1px transparent;
+    border-radius: 2px;
+    transition: all 0.3s ease-in;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.btn.btn-outline-orange {
+    border-color: #ee7e33;
+    color: #ee7e33 !important;
+}
+
+.btn.btn-outline-orange:hover,
+.btn.btn-outline-orange:focus,
+.btn.btn-outline-orange:active:focus {
+    background-color: #ee7e33;
+    color: #fff !important;
+}
+
+.button {
+    font-size: 100%;
+    -webkit-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    -ms-transition: all 0.25s ease-out;
+    -o-transition: all 0.25s ease-out;
+    text-transform: uppercase;
+    padding: 7px 15px;
+    line-height: 20px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    height: 34px;
+    border: 1px solid #eaeaea;
+    background: none;
+    color: #222;
+    background: #fff;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+
+
+/* icon */
+
+.icon {
+    display: inline-block;
+}
