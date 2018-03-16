@@ -43,7 +43,7 @@
 .food-submit button {
     padding: 10px;
     text-transform: uppercase;
-    background: #ee7e33;
+    background: #ea3f38;
     color: #fff;
     border: none;
     font-size: 18px;
@@ -95,4 +95,20 @@
 
 .green-bg h3 {
     color: #fff;
+}
+
+.resturantinpocket {
+    display: block;
+    background: #fff;
+    border-top: solid 1px #d9d9d9;
+}
+
+.resturantinpocket .resturantinpocket-in {
+    align-items: center;
+}
+
+.resturantinpocket .resturantapp-link {
+    display: inline-block;
+    width: 180px;
+    margin-right: 10px;
 }

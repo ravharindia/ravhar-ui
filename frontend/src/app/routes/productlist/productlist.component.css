@@ -29,7 +29,7 @@
 .product-nav li a:hover,
 .product-nav li a:focus,
 .product-nav li.active a {
-    color: #ee7e33;
+    color: #ea3f38;
     text-decoration: none;
     border: 1px solid #e2e2e2;
     border-right: none;
@@ -75,134 +75,68 @@
     display: inline-block;
 }
 
-.product-box {
-    border-right: 1px solid #dfdfdf;
-    padding-left: 0px;
-    padding-right: 0px;
-}
-
-.product-menu {
-    border: 1px solid #dfdfdf;
-    display: inline-block;
-    background: #fff;
-    border-radius: 2px 30px 2px 2px;
-    position: relative;
-    overflow: hidden;
-    transition: 0.3s ease-in-out;
-    -webkit-transition: 0.3s ease-in-out;
-    -moz-transition: 0.3s ease-in-out;
-    margin-bottom: 30px;
-}
-
-.overlay-box {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 235px;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.77);
-    text-align: center;
-    padding: 90px 0px;
-    transition: 0.3s ease-in-out;
-    -webkit-transition: 0.3s ease-in-out;
-    -moz-transition: 0.3s ease-in-out;
-}
-
-.overlay-box a {
-    background: #ee7e33;
-    display: inline-block;
-    width: 35px;
-    height: 35px;
-    line-height: 45px;
-    text-align: center;
-    margin: 0px 5px;
-}
-
-.overlay-box a svg {
-    width: 20px;
-    height: 20px;
-    fill: #fff;
-}
-
-.product-menu figure {
-    margin-bottom: 0px;
-    position: relative;
-    overflow: hidden;
-}
-
-.food-main {
-    padding: 10px;
-    display: table;
-    width: 100%;
-}
-
-.food-content {
-    float: left;
-}
-
-.food-content h3 {
-    font-size: 20px;
-    margin-bottom: 0px;
-}
-
-.food-content p {
-    margin-bottom: 0px;
-}
-
-.rating {
-    background: #48c479;
-    padding: 5px;
-    color: #fff;
-    float: right;
-    font-size: 18px;
-}
-
-.rating svg {
-    width: 15px;
-    height: 15px;
-    margin-right: 10px;
-}
-
-.food-productivity {
-    width: 100%;
-    border-top: 1px solid #ccc;
-    text-align: center;
-}
-
-.food-productivity li {
-    display: inline-block;
-    padding: 10px 10px;
-    font-size: 14px;
-    position: relative;
-}
-
-.food-productivity li::before {
-    content: url(/../assets/images/dot.png);
-    position: absolute;
-    left: -5px;
-}
-
-.food-productivity li:first-child::before {
-    display: none;
-}
-
-.product-menu:hover,
-.product-menu:focus {
-    box-shadow: 3px 3px 8px #ccc;
-    -webkit-box-shadow: 3px 3px 8px #ccc;
-    -moz-box-shadow: 3px 3px 8px #ccc;
-}
-
-.product-menu:hover .overlay-box {
-    top: 0;
-}
-
 .product-cart {
     background: #fff;
     padding: 10px;
+    position: sticky;
+    top: 10px;
 }
 
 .product-cart h3 {
     font-size: 20px;
+}
+
+.filter-sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background: #fff;
+    width: 250px;
+    z-index: 1000;
+    border-radius: 50px 0 0 0;
+    overflow: hidden;
+    padding: 50px 0 15px 15px;
+    border-left: solid 1px #d9d9d9;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.25);
+    transform: translateX(300px);
+    -webkit-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    -ms-transition: all 0.25s ease-out;
+    -o-transition: all 0.25s ease-out;
+}
+
+.filter-sidebar.open {
+    transform: translateX(0);
+}
+
+.filter-sidebar .filter-sidebar-in {
+    position: relative;
+    height: 100%;
+}
+
+.filter-sidebar .filter-sidebar-content {
+    overflow: auto;
+    padding-right: 15px;
+    position: relative;
+    height: calc(100% - 45px);
+    margin-bottom: 15px;
+}
+
+.filter-sidebar .filter-sidebar-in .close {
+    position: absolute;
+    font-weight: normal;
+    top: -30px;
+    right: 20px;
+}
+
+.filter-sidebar .filter-item-list {
+    padding: 10px 0;
+    border-bottom: solid 1px #d9d9d9;
+}
+
+.filter-sidebar .filter-item-list .filter-item-list {
+    padding: 5px 0 5px 20px;
+    border-bottom: none;
 }

@@ -22,7 +22,9 @@
             "styles.css"
         ],
         "scripts": [
-            "assets/js/all.js"
+            "assets/js/all.js",
+            "../node_modules/jquery/dist/jquery.js",
+            "../node_modules/owl.carousel/dist/owl.carousel.js"
         ],
         "environmentSource": "environments/environment.ts",
         "environments": {

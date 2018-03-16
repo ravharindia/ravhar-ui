@@ -1,0 +1,137 @@
+.product-box {
+    border-right: 1px solid #dfdfdf;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.product-menu {
+    border: 1px solid #dfdfdf;
+    min-width: 280px;
+    background: #fff;
+    border-radius: 2px 30px 2px 2px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    margin-bottom: 30px;
+}
+
+.overlay-box {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 235px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.77);
+    text-align: center;
+    padding: 90px 0px;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+}
+
+.overlay-box a {
+    background: #ea3f38;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    line-height: 45px;
+    text-align: center;
+    margin: 0px 5px;
+}
+
+.overlay-box a svg {
+    width: 20px;
+    height: 20px;
+    fill: #fff;
+}
+
+.product-menu figure {
+    margin-bottom: 0px;
+    position: relative;
+    overflow: hidden;
+}
+
+.food-main {
+    padding: 10px;
+    display: table;
+    width: 100%;
+}
+
+.food-content {
+    float: left;
+}
+
+.food-content h3 {
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+
+.food-content p {
+    margin-bottom: 0px;
+}
+
+.rating {
+    background: #48c479;
+    padding: 5px;
+    color: #fff;
+    float: right;
+    font-size: 18px;
+}
+
+.rating svg {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+}
+
+.food-productivity {
+    width: 100%;
+    border-top: 1px solid #ccc;
+    text-align: center;
+}
+
+.food-productivity li {
+    display: inline-block;
+    padding: 10px 10px;
+    font-size: 14px;
+    position: relative;
+}
+
+.food-productivity li::before {
+    content: url(/../assets/images/dot.png);
+    position: absolute;
+    left: -5px;
+}
+
+.food-productivity li:first-child::before {
+    display: none;
+}
+
+.product-menu:hover,
+.product-menu:focus {
+    box-shadow: 3px 3px 8px #ccc;
+    -webkit-box-shadow: 3px 3px 8px #ccc;
+    -moz-box-shadow: 3px 3px 8px #ccc;
+}
+
+.product-menu:hover .overlay-box {
+    top: 0;
+}
+
+.productbototm {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    border-top: solid 1px #ccc;
+    align-items: center;
+}
+
+.productbototm .productbox-bottom-left,
+.productbototm .productbox-bottom-right {
+    flex: 0 0 50%;
+    max-width: 50%;
+    font-weight: bold;
+}
