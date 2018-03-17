@@ -32,8 +32,13 @@
         <div class="productbox-bottom-left">{{ productPrice | currency }}</div>
         <div class="productbox-bottom-right">
 
-            <button class="btn btn-success">Add To Cart</button>
+            <button class="btn btn-success" (click)="this.showCounter = !this.showCounter" *ngIf="!showCounter">Add To Cart</button>
 
+            <div class="numbersystem countersystem" *ngIf="showCounter">
+                <button class="btn plusbtn" (click)="incrementCounter()">+</button>
+                <input type="number" min="1" value="1" [(ngModel)]="counter" #ctrl="ngModel" />
+                <button class="btn minusbtn" (click)="decrementCounter()">-</button>
+            </div>
         </div>
     </div>
 </div>

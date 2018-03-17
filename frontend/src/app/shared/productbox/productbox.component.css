@@ -6,7 +6,6 @@
 
 .product-menu {
     border: 1px solid #dfdfdf;
-    min-width: 280px;
     background: #fff;
     border-radius: 2px 30px 2px 2px;
     position: relative;
@@ -134,4 +133,8 @@
     flex: 0 0 50%;
     max-width: 50%;
     font-weight: bold;
+}
+
+.productbototm .productbox-bottom-right .btn {
+    padding: 5px 7px;
 }

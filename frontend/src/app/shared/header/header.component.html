@@ -32,9 +32,10 @@
                             </li>
                         </ol>
                         <div class="actions">
-                            <a class="cart-link button" href="#">
+                            <a class="cart-link button">
                              go to Cart			</a>
-                            <button type="button" title="Checkout" class="button"><span><span>Checkout</span></span></button>
+                            <a [routerLink]="['/checkout']" class="button"><span><span>Checkout</span></span></a>
+
                         </div>
                     </div>
                 </div>
@@ -83,7 +84,8 @@
                                     <div class="actions">
                                         <a class="cart-link button" href="#">
                                                go to Cart			</a>
-                                        <button type="button" title="Checkout" class="button"><span><span>Checkout</span></span></button>
+                                        <a [routerLink]="['/checkout']" class="button"><span><span>Checkout</span></span></a>
+
                                     </div>
                                 </div>
                             </div>

@@ -1,0 +1,144 @@
+<div class="checkout-wrap">
+    <div class="container">
+        <div class="row checkout-wrap-row">
+            <div class="col-md-8">
+                <div class="checkout-box complete">
+                    <div class="checkoutbox-in">
+                        <!-- <div class="row">
+                            <div class="col-sm-9">
+                                <div class="checkbox-top">
+                                    <h2 class="checkoutbox-title">Account</h2>
+                                    <p>To place your order now, log in to your existing account or sign up.</p>
+                                </div>
+
+                                <div class="checkbox-bottom">
+                                    <router-outlet></router-outlet>
+                                </div>
+
+                            </div>
+                            <div class="col-sm-3">
+                                <img src="assets/images/Image-login_btpq7r.webp" alt="" />
+                            </div>
+                        </div> -->
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="checkbox-top">
+                                    <h2 class="checkoutbox-title">Logged In <i class="icon fa fa-check-circle"></i></h2>
+                                </div>
+                                <div class="checkbox-bottom">
+                                    <div class="account-info">
+                                        <label>Vikas</label> 1234567890
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkout-icon">
+                        <i class="icon far fa-user"></i>
+                    </div>
+                </div>
+                <div class="checkout-box active">
+                    <div class="checkoutbox-in">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="checkbox-top">
+                                    <h2 class="checkoutbox-title">Add a delivery address</h2>
+                                    <p>You seem to be in the new location</p>
+                                </div>
+                                <div class="checkbox-bottom">
+                                    <h6>Chandni Chowk, New Delhi, Delhi, India</h6>
+                                </div>
+                                <div class="checkbox-baseline">
+                                    <button class="btn btn-outline-orange">Add New Location</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkout-icon">
+                        <i class="icon"> <img src="assets/svg/placeholder.svg" /> </i>
+                    </div>
+                </div>
+
+                <div class="checkout-box">
+                    <div class="checkoutbox-in">
+                        <div class="checkbox-top">
+                            <h2 class="checkoutbox-title">Payment</h2>
+                            <p>Choose your payment option for product</p>
+                        </div>
+                        <div class="checkbox-bottom">
+                            <div class="">
+                                <accordion [closeOthers]="true">
+                                    <accordion-group heading="Wallet">
+                                        <p>accordion 1</p>
+                                    </accordion-group>
+                                    <accordion-group heading="Credit and Debit Cards">
+                                        <p>accordion 2</p>
+                                    </accordion-group>
+                                    <accordion-group heading="Netbanking">
+                                        <p>accordion 3</p>
+                                    </accordion-group>
+                                    <accordion-group heading="Pay on Delivery">
+                                        <p>accordion 3</p>
+                                    </accordion-group>
+                                </accordion>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkout-icon">
+                        <i class="icon"> <img src="assets/svg/wallet.svg" /> </i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 checkout-cart">
+                <div class="checkout-cart-top">
+                    <div class="productimg"><img src="assets/images/foodimg.webp" /></div>
+                    <div class="foodname">
+                        <p><strong>Bangla Foods</strong></p>
+                        <p><small>Connaught Place</small></p>
+                    </div>
+                </div>
+                <div class="checkout-cart-middle">
+                    <div class="fooditem-number">
+                        <div class="food-item-name">
+                            <strong> Dahi Bhalla</strong>
+                        </div>
+                        <div class="food-item-counter">
+                            <div class="food-counter-in">
+                                <div class="numbersystem countersystem">
+                                    <button class="btn plusbtn" (click)="incrementCounter()">+</button>
+                                    <input type="number" min="1" value="1" [(ngModel)]="counter" #ctrl="ngModel" />
+                                    <button class="btn minusbtn" (click)="decrementCounter()">-</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="food-item-price">{{counter | currency }}</div>
+                    </div>
+                    <div class="fooditem-number">
+                        <div class="food-item-name">
+                            <strong> Dahi Bhalla</strong>
+                        </div>
+                        <div class="food-item-counter">
+                            <div class="food-counter-in">
+                                <div class="numbersystem countersystem">
+                                    <button class="btn plusbtn" (click)="incrementCounter()">+</button>
+                                    <input type="number" min="1" value="1" [(ngModel)]="counter" #ctrl="ngModel" />
+                                    <button class="btn minusbtn" (click)="decrementCounter()">-</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="food-item-price">{{counter | currency }}</div>
+                    </div>
+                </div>
+                <div class="checkout-cart-bottom">
+                    <div class="checkoutcart-label">Total</div>
+                    <div class="checkoutcart-subtotal">$300.00</div>
+                </div>
+                <div class="checkout-cart-bottom">
+                    <div class="checkoutcart-label">TO PAY
+                    </div>
+                    <div class="checkoutcart-subtotal">$300.00</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

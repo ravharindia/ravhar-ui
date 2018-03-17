@@ -1,0 +1,30 @@
+<div class="login-form">
+    <div class="login-form-line">
+        Enter login details or <a [routerLink]="['/checkout/register']" class="login-link">create an account</a>
+    </div>
+    <div class="login-form-group">
+        <div class="form-group">
+
+            <input type="number" class="form-control" maxlength="10" placeholder="Phone Number" />
+        </div>
+        <div class="form-group">
+
+            <input type="text" class="form-control" placeholder="Name" />
+        </div>
+        <div class="form-group">
+
+            <input type="email" class="form-control" placeholder="Email" />
+        </div>
+        <div class="form-group">
+
+            <input type="password" class="form-control" placeholder="Password" />
+        </div>
+        <div class="form-group">
+            <a [routerLink]="['/']" class="login-link">Have a referral code?</a>
+        </div>
+        <div class="form-group">
+            <button class="btn btn-success">Login</button>
+            <p class="text-left"><small>By creating an account, I accept the <a href="">Terms & Conditions</a></small></p>
+        </div>
+    </div>
+</div>

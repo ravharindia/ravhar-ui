@@ -1,0 +1,15 @@
+.login-form {
+    position: relative;
+}
+
+.login-form .login-form-line {
+    margin-bottom: 20px;
+}
+
+.login-form .login-link {
+    color: #ea3f38;
+}
+
+.login-form .form-group .btn {
+    width: 100%;
+}

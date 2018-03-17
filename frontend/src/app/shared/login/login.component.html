@@ -1,0 +1,21 @@
+<div class="login-form">
+    <div class="login-form-line">
+        Enter login details or <a [routerLink]="['/checkout/register']" class="login-link">create an account</a>
+    </div>
+    <div class="login-form-group">
+        <div class="form-group">
+
+            <input type="number" class="form-control" maxlength="10" placeholder="Phone Number" />
+        </div>
+        <div class="form-group">
+
+            <input type="password" class="form-control" placeholder="Password" />
+        </div>
+        <div class="form-group text-right">
+            <a [routerLink]="['/']" class="login-link">Forgot Password?</a>
+        </div>
+        <div class="form-group">
+            <button class="btn btn-success">Login</button>
+        </div>
+    </div>
+</div>

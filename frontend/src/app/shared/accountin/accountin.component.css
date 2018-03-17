@@ -1,0 +1,8 @@
+.checkout-accountbtn .btn {
+    margin-right: 15px;
+}
+
+.checkout-accountbtn .btn label {
+    display: block;
+    margin-bottom: 0;
+}
