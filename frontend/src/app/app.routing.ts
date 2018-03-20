@@ -6,6 +6,8 @@ import { AccountComponent } from './routes/account/account.component';
 import { LoginComponent } from './shared/login/login.component';
 import { RegisterComponent } from './shared/register/register.component';
 import { AccountinComponent } from './shared/accountin/accountin.component';
+import { AdminComponent } from './routes/admin/admin.component';
+import { DashboardComponent } from './routes/dashboard/dashboard.component';
 
 export const Routing = RouterModule.forRoot([
     {
@@ -37,6 +39,21 @@ export const Routing = RouterModule.forRoot([
                         component: RegisterComponent
                     }
                 ]
+            }
+        ]
+    },
+    {
+        path: 'admin',
+        component: AdminComponent,
+        children: [
+            {
+                path: '',
+                redirectTo: 'dashboard',
+                pathMatch: 'full'
+            },
+            {
+                path: 'dashboard',
+                component: DashboardComponent
             }
         ]
     }

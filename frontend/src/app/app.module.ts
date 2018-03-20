@@ -23,6 +23,10 @@ import { AccountComponent } from './routes/account/account.component';
 import { LoginComponent } from './shared/login/login.component';
 import { RegisterComponent } from './shared/register/register.component';
 import { AccountinComponent } from './shared/accountin/accountin.component';
+import { AdminComponent } from './routes/admin/admin.component';
+import { AdminHeaderComponent } from './shared/admin-header/admin-header.component';
+import { AdminSidebarComponent } from './shared/admin-sidebar/admin-sidebar.component';
+import { DashboardComponent } from './routes/dashboard/dashboard.component';
 
 
 @NgModule({
@@ -39,6 +43,10 @@ import { AccountinComponent } from './shared/accountin/accountin.component';
     LoginComponent,
     RegisterComponent,
     AccountinComponent,
+    AdminComponent,
+    AdminHeaderComponent,
+    AdminSidebarComponent,
+    DashboardComponent,
 
   ],
   imports: [

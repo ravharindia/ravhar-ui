@@ -1,0 +1,36 @@
+.animation-transition-fast,
+.navbar {
+    -webkit-transition: all 150ms ease 0s;
+    -moz-transition: all 150ms ease 0s;
+    -o-transition: all 150ms ease 0s;
+    -ms-transition: all 150ms ease 0s;
+    transition: all 150ms ease 0s;
+}
+
+.navbar {
+    border: 0;
+    border-radius: 3px;
+    border-bottom: 1px solid #ededf3;
+    padding: 10px 0;
+    color: #555555;
+}
+
+.navbar.navbar-transparent {
+    background-color: transparent;
+    box-shadow: none;
+    border-bottom: 0;
+}
+
+.admin-header .navbar {
+    background: #fff;
+    padding: 5px 15px;
+    align-items: center;
+}
+
+.admin-header .navbar .navbar-toggler {
+    display: inline-block;
+}
+
+.admin-header .navbar .navbar-toggler span {
+    height: auto;
+}
